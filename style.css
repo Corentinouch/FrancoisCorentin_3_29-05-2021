@@ -203,7 +203,7 @@ transition: 300ms;
 footer{
     background-color: #353535;
     color:white;
-    padding:15px 0;
+    padding:10px 0;
 }
 svg{
     width: 110px;
@@ -293,11 +293,18 @@ header a{
     overflow:hidden;
 }
 .plat li .plat_name{
+    padding-top:5px;
     display:flex;
     justify-content: space-between;
     align-items: flex-end;
+    transition: 300ms;
 }
-
+.plat_name > p{
+    transition: 300ms;
+}
+.plat li:hover > .plat_name > p {
+    transform: translateX(-70px);
+    }
 .check{
     color:white;
     display: inline-flex;
@@ -307,8 +314,20 @@ header a{
     width: 50px;
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: -70px;
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
+    transition:300ms;
+}
+.check i {
+    transform:rotate(90deg);
+    transition:500ms;
+}
+
+.plat li:hover > .check {
+right:0px;
+}
+.plat li:hover > .check i {
+    transform:rotate(360deg);
 }
