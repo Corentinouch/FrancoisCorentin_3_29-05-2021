@@ -22,6 +22,18 @@
     font-size:1.5em;
     margin-left: 20px;
 }
+.ft_14{
+    font-size:14px;
+    padding-top:5px;
+}
+.photo_noteenchantee{
+    height: 250px;
+}
+.photo_noteenchantee img{
+    top: -100px;
+    position: relative;
+    z-index: -1;
+}
 /*HEADER*/
 
  header{
