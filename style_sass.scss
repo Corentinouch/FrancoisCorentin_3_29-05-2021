@@ -22,6 +22,30 @@
     font-size:1.5em;
     margin-left: 20px;
 }
+.ft_14{
+    font-size:14px;
+    padding-top:5px;
+}
+.photo_noteenchantee{
+    height: 250px;
+
+    img{
+        top: -100px;
+        position: relative;
+        z-index: -1;
+    }
+}
+
+ul li{
+    list-style: none;
+    margin:15px 0;
+}
+ul li p{
+    margin:0px;
+}
+.sous_titre{
+    font-size:1.1em;
+}
 /*HEADER*/
 
  header{
@@ -129,6 +153,12 @@
 .restaurant{
     background:rgb(240, 240, 240);
     padding: 15px 0;
+    .all_card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    
     .card{
         height: 250px;
         width: 330px;
@@ -154,9 +184,6 @@
                 p{
                     margin:2px;
                 }
-                .sous_titre{
-                    font-size:1.1em;
-                }
             }
         }
         .new{
@@ -168,6 +195,7 @@
             font-size: 0.9em;
             color: #1d8269;
             border-radius: 0.15em;
+            }
         }
     }
 }
@@ -306,9 +334,13 @@ header a{
         position: relative;
         overflow:hidden;
         .plat_name{
-            display:flex;
-            justify-content: space-between;
-            align-items: flex-end;
+            padding-top:5px;
+        display:flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        transition: 300ms;
+        text-overflow: ellipsis;
+        overflow: hidden;
         }
     }
 }
@@ -342,22 +374,122 @@ header a{
 
 .plat li:hover > .check {
     right:0px;
-    }
-    .plat li:hover > .check i {
-        transform:rotate(360deg);
-    }
-
-    .pt_15{
-        padding-top:15px;
-    }
+}
+.plat li:hover > .check i {
+    transform:rotate(360deg);
+}
+.pt_15{
+    padding-top:15px;
+}
     
-    .btn{
-        margin: 20px 0 25px 0;
-        display: inline-block;
-        padding: 12px 20px;
-        border-radius: 2em;
-        color: white;
-        font-size: 0.9em;
-        background: rgb(255,121,218);
-        background: linear-gradient(167deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 75%);
+.btn{
+    margin: 20px 0 25px 0;
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 2em;
+    color: white;
+    font-size: 0.9em;
+    background: rgb(255,121,218);
+    background: linear-gradient(167deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 75%);
+}
+
+.t_1{
+    animation: fondu 1s ease-in-out forwards;
+    animation-delay: 200ms;
+}
+.t_2{
+    animation: fondu 1s ease-in-out forwards;
+    animation-delay: 400ms;
+}
+.t_3{
+    animation: fondu 1s ease-in-out forwards;
+    animation-delay: 600ms;
+}
+.t_4{
+    animation: fondu 1s ease-in-out forwards;
+    animation-delay: 800ms;
+}
+.t_5{
+    animation: fondu 1s ease-in-out forwards;
+    animation-delay: 1000ms;
+}
+.t_6{
+    animation: fondu 1s ease-in-out forwards;
+    animation-delay: 1200ms;
+}
+.t_7{
+    animation: fondu 1s ease-in-out forwards;
+    animation-delay: 1400ms;
+}
+.t_8{
+    animation: fondu 1s ease-in-out forwards;
+    animation-delay: 1600ms;
+}
+.t_9{
+    animation: fondu 1s ease-in-out forwards;
+    animation-delay: 1800ms;
+}
+.menu_opacity{
+    opacity:0%;
+}
+.commande{
+    display: flex;
+    justify-content: space-around;
+}
+
+@keyframes fondu {
+    from{
+        opacity:0%;
+        transform:translateY(10px);
     }
+    to{
+        opacity:100%;
+        transform:translateY(0px);
+    }
+}
+
+.fond{
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 1000px;
+    z-index: 10;
+    visibility: visible;
+    animation: loading 300ms ease-out forwards;
+    animation-delay: 2.5s;
+}
+.fond .boucle{
+    padding-top: 200px;
+    width:100%;
+}
+@keyframes loading{
+    from{
+        z-index:10;
+        opacity: 100%;
+    }
+    to{
+        z-index:0;
+        opacity: 0%;
+    }
+}
+.ellipse{
+    white-space: inherit;
+    width: 100%;
+    text-overflow: initial;
+    overflow: visible;
+}
+
+.plat li:hover .ellipse{
+    white-space: nowrap;
+    width: 190px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.link{
+    text-decoration: none;
+    color:white;
+}
+.link:hover{
+    text-decoration: underline;
+}
