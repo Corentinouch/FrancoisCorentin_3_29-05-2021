@@ -177,7 +177,7 @@ header img {
 /*RESTAURANT CHOICE*/
 .restaurant {
   background: #f0f0f0;
-  padding: 15px 0;
+  padding: 35px 0 45px 0;
 }
 
 .restaurant .all_card {
@@ -274,7 +274,7 @@ header img {
   background-color: #ff79da;
   background: linear-gradient(167deg, #ff79da 0%, #9356dc 75%);
   background-size: 100%;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -299,7 +299,7 @@ footer svg path {
 }
 
 footer ul {
-  padding: 0px 10px;
+  padding: 0px 25px;
   margin: -10px auto;
 }
 
@@ -336,7 +336,8 @@ header a {
   background: #f0f0f0;
   top: -50px;
   padding: 20px;
-  border-radius: 3em;
+  border-radius: 3em 3em 0 0;
+  margin-bottom: -50px;
 }
 
 .titre_menu {

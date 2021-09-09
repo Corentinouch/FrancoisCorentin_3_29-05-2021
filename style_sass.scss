@@ -152,7 +152,7 @@ ul li p{
 
 .restaurant{
     background:rgb(240, 240, 240);
-    padding: 15px 0;
+    padding: 35px 0 45px 0;
     .all_card{
         display: flex;
         flex-direction: row;
@@ -232,7 +232,7 @@ transition: 300ms;
     background-color: rgba(255,121,218,1);
     background:linear-gradient(167deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 75%);
     background-size: 100%;
-    background-clip: text;
+    background-clip:content-box;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
@@ -253,7 +253,7 @@ footer{
         }
     }
     ul{
-        padding: 0px 10px;
+        padding: 0px 25px;
         margin: -10px auto;
         li{
             list-style: none;
@@ -289,7 +289,8 @@ header a{
     background: rgb(240, 240, 240);
     top: -50px;
     padding: 20px;
-    border-radius: 3em;
+    border-radius: 3em 3em 0 0;
+    margin-bottom:-50px;
 }
 .titre_menu{
     margin-left:0px;
